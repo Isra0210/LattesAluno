@@ -1,0 +1,596 @@
+/*CSS DO HEADER*/
+
+@charset "UTF-8";
+
+.dropdown{
+	margin-left: 80%;
+	margin-top: -20px;
+}
+
+.footer{
+    border-top: 1px solid #808080;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: -100px;
+}
+
+#p_footer{
+	margin-bottom: -50px;
+	text-align: center;
+}
+
+#logado_footer{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+#logo_footer{
+    margin-top: -20px;
+    margin-right: 20px;
+    height: 60px;
+    float: right;
+}
+
+#imagem_home{
+    height: 100px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 41%;
+}
+hr{
+	background-color: #808080;
+	width: 100%;
+}
+.navigation {
+    margin-top: -15px;
+	height: 55px;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav {
+    margin-left: 30%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  color: #000;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  color: #ffd700;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/*FIM CSS HEADER*/
+
+/*CSS PERFIL*/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:500,700|Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,900');
+
+body{margin:0;padding:0;width:100%;}
+
+.title-2{
+	text-align:center;
+	font-size: 25px;
+	font-weight: 400;
+	color: #333;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.bimenu{
+	display: none;
+}
+
+.bimenu button{
+	position:fixed;
+	width:50px;
+	height:50px;
+	margin-right:15px;
+	border-radius: 100%;
+	padding:4px 15px 0px 15px;
+	bottom: 15px;
+	right: 5px;
+	transition:0.2s;
+	-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+}
+
+.bimenu i{
+	color: #333;
+	font-size:18px;
+}
+
+.header{
+	position:relative;
+	width:100%;
+	height:200px;
+	border-bottom: 3px solid #fff;
+	background-color: #ffffff;
+	background-position:center;
+	background-color: #ffffff;
+	background-image: url("https://i.ytimg.com/vi/TN2fJ24pKXs/maxresdefault.jpg");
+	background-size:cover;
+}
+
+.header button{
+	position:relative;
+	float: right;
+	width:50px;
+	height:50px;
+	margin-right:15px;
+	border-radius: 100%;
+	padding:0px 15px 0px 15px;
+	top: 130px;
+	right: 5px;
+	transition:0.2s;
+	-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+}
+
+.header button:hover{
+	width:180px;
+	height:50px;
+	margin-right:15px;
+	border-radius: 1000px;
+	padding:0px 15px 0px 15px;
+	bottom: 5px;
+	right: 5px;
+	transition:0.2s;
+}
+
+.header button i{
+	float:right;
+	color: #333;
+	font-size:18px;
+}
+
+.header button:hover i{
+	display:none;
+	transition: 1s;
+}
+
+.header button .text{
+	display:none;
+	font-family: 'Quicksand', sans-serif;
+	font-size:15px;
+	font-weight: 600;
+	transition: 1s;
+}
+
+.header button:hover .text{
+	display:inline-block;
+	transition: 1s;
+}
+
+.avatar{
+	z-index:1;
+	position: relative;
+   margin: auto;
+	margin-top: -80px;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	border: 4px solid rgba(255, 255, 255, 1);
+	background: url("http://meredithcnn.images.worldnow.com/images/10389401_G.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.content{
+	position:relative;
+}
+
+.opperfil{
+	position: absolute;
+	width:100%;
+	margin-top: -77px;
+}
+
+.opperfil button{
+	z-index:0;
+	position: relative;
+   margin: auto;
+	margin-left:0px;
+	width:200px;
+	height:40px;
+	border-radius: 1000px;
+	padding:0px 35px 0px 5px;
+	-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+}
+
+.opperfil button:nth-child(2){
+	margin-left: 70px;
+	padding:0px 5px 0px 35px;
+}
+
+.opperfil button .text{
+	font-family: 'Quicksand', sans-serif;
+	font-size:13px;
+	font-weight: 600;
+}
+
+.tituloperfil h1{
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	color:#444;
+	font-size:35px;
+	text-align:center;
+	margin-top:20px;
+}
+
+.tituloperfil p{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #777;
+}
+
+.smallbriefing{
+	display:none;
+}
+
+.expsoftware{
+	display: table-cell;
+	margin: auto;
+	width: 440px;
+	height: auto;
+}
+
+.infocandidato{
+	width:500px;
+	margin: auto;
+}
+
+.infocandidato textarea{
+	font-family: 'Quicksand', sans-serif;
+	font-size:16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato input{
+	font-family: 'Quicksand', sans-serif;
+	font-size:16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato select{
+	font-family: 'Quicksand', sans-serif;
+	font-size:16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato button{
+	font-family: 'Cabin', sans-serif;
+	font-size:15px;
+	font-weight: 800;
+}
+
+.infocandidato label{
+	font-family: 'Quicksand', sans-serif;
+	font-size:12px;
+	font-weight: 800;
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 1000px) {
+	.bimenu{
+		display: block;
+	}
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 550px) {
+	
+   .header button:hover{
+		position:relative;
+		float: right;
+		width:50px;
+		height:50px;
+		margin-right:15px;
+		border-radius: 100%;
+		padding:0px 15px 0px 15px;
+		top: 130px;
+		right: 5px;
+		transition:0.2s;
+		-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+		box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	}
+
+	.header button:hover i{
+		display: inline-block;
+		float:right;
+		color: #333;
+		font-size:18px;
+	}
+	
+	.header button:hover .text{
+		display:none;
+		font-family: 'Quicksand', sans-serif;
+		font-size:15px;
+		font-weight: 600;
+		transition: 1s;
+	}
+	
+	.opperfil button{
+		z-index:0;
+		position: relative;
+		margin: auto;
+		margin-left:0px;
+		width:140px;
+		height:40px;
+		border-radius: 1000px;
+		padding:0px 35px 0px 10px;
+		-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+		box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	}
+
+	.opperfil button:nth-child(2){
+		margin-left: 100px;
+		padding:0px 15px 0px 35px;
+	}
+
+	.opperfil button .text{
+		font-family: 'Quicksand', sans-serif;
+		font-size:12px;
+		font-weight: 600;
+	}
+	
+	.tituloperfil h1{
+		font-family: 'Cabin', sans-serif;
+		color:#444;
+		font-size:30px;
+		text-align:center;
+		margin-top:20px;
+	}
+
+	.tituloperfil p{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #777;
+	}
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 450px) {
+	
+	.header{
+		position:relative;
+		width:100%;
+		height:120px;
+		border-bottom: 3px solid #fff;
+		background-color: #ffffff;
+		background-position:center;
+		background-color: #ffffff;
+		background-image: url("https://i.ytimg.com/vi/TN2fJ24pKXs/maxresdefault.jpg");
+		background-size:cover;
+	}
+	
+   .header button, button:hover{
+		position:relative;
+		float: right;
+		width:50px;
+		height:50px;
+		margin-right:15px;
+		border-radius: 100%;
+		padding:0px 15px 0px 15px;
+		top: 50px;
+		right: 5px;
+		transition:0.2s;
+		-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+		box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	}
+
+	.header button:hover i{
+		display: inline-block;
+		float:right;
+		color: #333;
+		font-size:18px;
+	}
+	
+	.header button:hover .text{
+		display:none;
+		font-family: 'Quicksand', sans-serif;
+		font-size:15px;
+		font-weight: 600;
+		transition: 1s;
+	}
+	
+	.avatar{
+		z-index:1;
+		position: relative;
+		margin: auto;
+		margin-top: -50px;
+		width: 120px;
+		height: 120px;
+		border-radius: 100%;
+		border: 4px solid rgba(255, 255, 255, 1);
+		background: url("http://meredithcnn.images.worldnow.com/images/10389401_G.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.opperfil button{
+		z-index:0;
+		position: relative;
+		margin: auto;
+		margin-left:0px;
+		width:140px;
+		height:40px;
+		border-radius: 1000px;
+		padding:0px 35px 0px 10px;
+		-webkit-box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+		box-shadow:0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+	}
+
+	.opperfil button:nth-child(2){
+		margin-left: 50px;
+		padding:0px 15px 0px 35px;
+	}
+
+	.opperfil button .text{
+		font-family: 'Quicksand', sans-serif;
+		font-size:11px;
+		font-weight: 600;
+	}
+	
+	.tituloperfil h1{
+		font-family: 'Cabin', sans-serif;
+		color:#444;
+		font-size:25px;
+		text-align:center;
+		margin-top:20px;
+	}
+
+	.tituloperfil p{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #777;
+	}
+	
+	.bigbriefing{
+		display: none;
+	}
+	
+	.smallbriefing{
+		display: block;
+	}
+	
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 350px) {
+	
+	.avatar{
+		z-index:1;
+		position: relative;
+		margin: auto;
+		margin-top: -50px;
+		width: 90px;
+		height: 90px;
+		border-radius: 100%;
+		border: 4px solid rgba(255, 255, 255, 1);
+		background: url("http://meredithcnn.images.worldnow.com/images/10389401_G.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	
+}
+/*FIM CSS PERFIL*/

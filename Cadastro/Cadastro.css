@@ -1,0 +1,191 @@
+body{
+    background-color:rgb(247, 247, 247);
+  }
+    #cadastrado{
+      color: green;
+    }
+    #existe{
+      color: blue;
+    }
+
+    #acessarLogin{
+      text-decoration: none;
+      color: #000;
+    }
+
+    #acessarLogin:hover{
+      color: #808080;
+    }
+    hr{
+      width: 50%;
+      margin-top: -10px;
+      background-color: #000;
+    }
+   .c-contain{
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: auto;
+     }
+ 
+    #imagem{
+    margin-left: 0%;
+    height: 100px;
+    margin-top: 30px;
+    }
+ 
+   .c-centered{
+     width:50%;
+     margin: 0 auto;
+     text-align: center;
+     display: block;
+   }
+ 
+   .c-centered p{
+     color: #000;
+     font-family: CantataOne-Regular;
+     font-size: 1em;
+     margin-top: 2%;
+ }
+ 
+  .c-centered h1 {
+    font-family: georgia;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-top: 5%;
+  }
+
+  form{
+    background-color: #fff;
+    margin-top: 30px;
+  }
+ 
+ /* BUTTON */
+   .c-centered button{
+     font-size: 15px;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
+     border: 1px solid #000;
+     color: #000;
+     text-align: right !important;
+     padding: 15px 70px;
+     transition: .3s ease-in;
+     margin-bottom: 5%;
+     background-color: #ffd700;
+     cursor: pointer;
+   }
+   
+ /* input starts here */
+ input:focus ~ label,
+ textarea:focus ~ label,
+ input:valid ~ label,
+ textarea:valid ~ label {
+   font-size: 1em;
+   color: #000;
+   top: -2.25rem;
+   -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+   transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+ }
+ 
+ .styled-input {
+   float: none;
+   width: 75.3333%;
+   margin: 2rem 0 1rem;
+   position: relative;
+   margin: 5% auto;
+ }
+ 
+ .styled-input label {
+   color: #999;
+   padding: 1rem;
+   position: absolute;
+   top: 0;
+   left: 0;
+   -webkit-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+   transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+   pointer-events: none;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+ }
+ 
+ .styled-input.wide {
+   width: 100%;
+ }
+ 
+ input,
+ textarea {
+   padding: 1rem 1rem;
+   border: 0;
+   width: 100%;
+   font-size: 1rem;
+   border-bottom: 1px solid #000 !Important;
+   background-color: transparent;
+   border: none;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   color: #000;
+   left: 0;
+   border-left: none;
+   right: 0;
+ }
+ 
+ input ~ span,
+ textarea ~ span {
+   display: block;
+   width: 0;
+   height: 3px;
+   background: #ffd700;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+   transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+ }
+ 
+ input:focus,
+ textarea:focus {
+   outline: 0;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+ }
+ 
+ input:focus ~ span,
+ textarea:focus ~ span {
+   width: 106%;
+   -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+   transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+ }
+ 
+ textarea {
+   width: 100%;
+   min-height: 15em;
+ }
+ 
+ @media only screen and (max-width: 500px) {
+   /*FORM CADASTRO*/
+   .c-centered h1 {
+     font-family: georgia;
+     color: #fff;
+     font-size: 28px;
+     font-weight: bolder;
+     margin-top: 15%;
+   }
+   .c-centered {
+     width: 80%;
+     margin: 0 auto;
+     text-align: center;
+     display: block;
+   }
+   .styled-input {
+     float: none;
+     width: 75.3333%;
+     margin: 2rem 0 1rem;
+     position: relative;
+     margin: 10% auto;
+   }
+ }

@@ -1,0 +1,39 @@
+.card{
+    margin-left: 8%;
+    margin-bottom: 30px;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: 1;
+    background-color:rgb(247, 247, 247);
+    color: #000;
+    border: 1px solid #000;
+}
+
+.card-img-top{
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    margin-top: -15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    max-width: 50ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-link{
+    padding-top: -20px;
+    margin-top: 105px;
+    margin-left: 78px;
+    color: #000;
+}
+
+.card-link:hover{
+    color: blue
+}
